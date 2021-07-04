@@ -12,9 +12,10 @@
 .likeItem {
     display: flex;
     flex-direction: row-reverse;
-    background: linear-gradient(to right, #f00 , #ce367f);
+    background: linear-gradient(to right, #f00, #ce367f);
     border: 1px solid #333;
 }
+
 .likeItem label {
     margin: 0;
     min-width: 75px;
@@ -28,17 +29,21 @@
     padding: 0;
     background: #fff;
 }
+
 .likeItem label:last-child {
     border-left: none;
 }
-.likeItem label:before{
+
+.likeItem label:before {
     display: none !important;
 }
+
 .likeItem .liked input:checked label {
     /*background: #ddd;*/
 }
-.likeItem input[type='radio']:hover~label,
-.likeItem input[type='radio']:checked~label{
+
+.likeItem input[type='radio']:hover ~ label,
+.likeItem input[type='radio']:checked ~ label {
     background: none;
     color: #fff;
 }
@@ -54,27 +59,156 @@
 .matrixTable.table {
 }
 
-.matrixTable.table.table-hover tbody tr:first-child:hover {
-    background: red;
-}
-
 .matrixTable.table tr {
 }
 
 .matrixTable.table tr th {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     vertical-align: middle;
     border-top: none;
+    padding: 10px 0;
+    width: 100px;
+    font-weight: 400;
 }
+
+.matrixTable.table tr th:first-child {
+    width: 250px;
+}
+
 .matrixTable.table tr td {
     vertical-align: middle;
     padding: 0 10px;
 }
+
 .matrixTable.table tr td .answer-option-cell {
     display: flex;
     justify-content: center;
 }
+
 .matrixTable.table tr td .answer-option-cell label {
     margin: 0;
+}
+
+.imgSelectQuestion {
+    display: flex;
+}
+
+.imgSelectQuestion .imgSelectItem {
+}
+
+.imgSelectQuestion .imgSelectItem label {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.imgSelectQuestion .imgSelectItem input[type='radio']:checked + label {
+    border-color: #333;
+}
+
+.imgSelectQuestion .imgSelectItem label:before {
+    display: none !important;
+}
+
+.emojiSelectQuestion {
+    display: flex;
+}
+
+.emojiSelectQuestion .emojiSelectItem {
+    padding: 5px;
+}
+
+.emojiSelectQuestion .emojiSelectItem label {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+.emojiSelectQuestion .emojiSelectItem label .emoji {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.emojiSelectQuestion .emojiSelectItem label .emoji_info {
+    display: block;
+    color: #1b1e21;
+    font-size: 14px;
+}
+
+.emojiSelectQuestion .emojiSelectItem label:before {
+    display: none !important;
+}
+
+.emojiSelectQuestion .emojiSelectItem input[type='radio']:checked + label {
+    border-color: #333;
+}
+
+.rangeSelect {
+}
+
+.rangeInner {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.rangeInner .rangeValue .form-control {
+    padding: 0 !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.slideContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slideContainer .rangeValue {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 15px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ce367f;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #ce367f;
+    cursor: pointer;
 }
