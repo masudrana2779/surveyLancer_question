@@ -7,51 +7,40 @@
 }
 
 .likelyWrap {
-    display: flex;
-    border: 1px solid #333;
 }
 
 .likeItem {
+    display: flex;
+    flex-direction: row-reverse;
+    background: linear-gradient(to right, #f00 , #ce367f);
+    border: 1px solid #333;
+}
+.likeItem label {
+    margin: 0;
     min-width: 75px;
     width: 9.09%;
     height: 40px;
-    border-right: 1px solid #333;
+    border-left: 1px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-
-.likeItem .liked {
-    width: 100%;
-    height: 100%;
-}
-.likeItem .liked input {
-    display: none;
-}
-.likeItem .liked label {
-    width: 100%;
-    height: 100%;
-    background: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0;
+    background: #fff;
 }
-.likeItem .liked label:before{
+.likeItem label:last-child {
+    border-left: none;
+}
+.likeItem label:before{
     display: none !important;
 }
 .likeItem .liked input:checked label {
     /*background: #ddd;*/
 }
-.rating input[type='radio']:hover~label,
-input[type='radio']:checked~label{
+.likeItem input[type='radio']:hover~label,
+.likeItem input[type='radio']:checked~label{
     background: none;
     color: #fff;
-}
-
-.likeItem:last-child {
-    border: none;
 }
 
 .matrixTableWrap {
