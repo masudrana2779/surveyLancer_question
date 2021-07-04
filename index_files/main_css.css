@@ -1,0 +1,85 @@
+body { background: #F8F8FA;}
+
+
+/*hr{ 
+  
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         100px;
+    width:          1px;       
+}
+
+.bg-g {
+    background-color: #000000 !important;
+}
+
+
+.footer{
+  background: #000000;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}*/
+
+/*
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+#mainNavbar {
+    padding-left: 50px;
+    padding-top: 20px
+}
+
+.navbar-dark .navbar-brand {
+    font-family: 'Source Serif Pro', serif
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Source Serif Pro', serif
+}
+
+.display-4 {
+    font-family: 'Source Serif Pro', serif
+}
+
+.lead {
+    font-family: 'Source Serif Pro', serif
+}
+
+.navbar.scrolled {
+    background: rgb(34, 31, 31);
+    transition: background 500ms
+}
+
+.font-weight-light {
+    font-family: 'Source Serif Pro', serif
+}*/

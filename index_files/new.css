@@ -1,0 +1,91 @@
+.likelyPara {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.likelyWrap {
+    display: flex;
+    border: 1px solid #333;
+}
+
+.likeItem {
+    min-width: 75px;
+    width: 9.09%;
+    height: 40px;
+    border-right: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.likeItem .liked {
+    width: 100%;
+    height: 100%;
+}
+.likeItem .liked input {
+    display: none;
+}
+.likeItem .liked label {
+    width: 100%;
+    height: 100%;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.likeItem .liked label:before{
+    display: none !important;
+}
+.likeItem .liked input:checked label {
+    /*background: #ddd;*/
+}
+.rating input[type='radio']:hover~label,
+input[type='radio']:checked~label{
+    background: none;
+    color: #fff;
+}
+
+.likeItem:last-child {
+    border: none;
+}
+
+.matrixTableWrap {
+
+}
+
+.matrixTableInner {
+    padding-top: 20px;
+}
+
+.matrixTable.table {
+}
+
+.matrixTable.table.table-hover tbody tr:first-child:hover {
+    background: red;
+}
+
+.matrixTable.table tr {
+}
+
+.matrixTable.table tr th {
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    border-top: none;
+}
+.matrixTable.table tr td {
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.matrixTable.table tr td .answer-option-cell {
+    display: flex;
+    justify-content: center;
+}
+.matrixTable.table tr td .answer-option-cell label {
+    margin: 0;
+}
