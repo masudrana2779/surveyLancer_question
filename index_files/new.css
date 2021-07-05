@@ -12,7 +12,7 @@
 .likeItem {
     display: flex;
     flex-direction: row-reverse;
-    background: linear-gradient(to right, #f00, #ce367f);
+    background: linear-gradient(to right, #dadada, #ce367f);
     border: 1px solid #333;
 }
 
