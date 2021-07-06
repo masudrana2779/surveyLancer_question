@@ -1371,7 +1371,7 @@
                             <div class="question-click-shield" tabindex="-1"
                                  style="height: 201px; width: 840px; display: block;"></div>
                             <div class="question-row clearfix overlay" tabindex="-1">
-                                <div data-question-type="single_choice_vertical_two_col"
+                                <div id="4question-field-range" data-question-type="single_choice_vertical_two_col"
                                      data-rq-question-type="single_choice_vertical_two_col"
                                      class="question-container">
                                     <div data-qnumber="5" data-qdispnumber="5"
@@ -1410,13 +1410,18 @@
                                         </fieldset>
                                     </div>
                                 </div>
-                                <button id="617913915y-ok"
+                                <button id="range_ok"
                                         class="new-button ok-button user-generated notranslate hide" type="submit">
                                     OK
                                 </button>
                             </div>
 
                             <script>
+                                $(document).ready(function () {
+                                    $("#4question-field-range input[type=range]").on("change", function () {
+                                        $("#range_ok").removeClass('hide');
+                                    });
+                                });
                                 var slider = document.getElementById("myRange");
                                 var output = document.getElementById("demo");
                                 output.innerHTML = slider.value;
