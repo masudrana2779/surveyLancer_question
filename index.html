@@ -584,7 +584,7 @@
                                 <div class="question-click-shield" tabindex="-1"
                                      style="height: 201px; width: 840px; display: block;"></div>
                                 <div class="question-row clearfix overlay" tabindex="-1">
-                                    <div data-question-type="single_choice_vertical_two_col"
+                                    <div id="61791391545_field" data-question-type="single_choice_vertical_two_col"
                                          data-rq-question-type="single_choice_vertical_two_col"
                                          class="question-container">
                                         <div class=" question-fieldset question-legend">
@@ -642,11 +642,19 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <script>
+                                        $(document).ready(function () {
+                                            $("#61791391545_field input[type=radio]").on("click", function () {
+                                                $("#61791391545_ok").removeClass('hide');
+                                            });
+                                        });
+                                    </script>
+                                    <button id="61791391545_ok"
+                                            class="new-button ok-button user-generated notranslate hide" type="submit">
+                                        OK
+                                    </button>
                                 </div>
-                                <button id="61791391545-ok"
-                                        class="new-button ok-button user-generated notranslate hide" type="submit">
-                                    OK
-                                </button>
+
                             </div>
 
 
@@ -1165,7 +1173,7 @@
                                             <p class="quenstionCountdown">5
                                                 / 8</p>
                                             <legend class="question-legend">
-                                                <h4 id="question-title-1046553673" class="question-title-container">
+                                                <h4 class="question-title-container">
                                                     <span class="required-asterisk notranslate">*</span><span
                                                         class="question-number notranslate">5<span
                                                         class="question-dot">. </span></span><span
@@ -1201,7 +1209,7 @@
 
                                 <script>
                                     $(document).ready(function () {
-                                        $("#5question-field-1046553673 input[type=checkbox]").on("click", function () {
+                                        $("#5question-field-1046553673 select").on("change", function () {
                                             $("#5Should_Be_Same_ID").removeClass('hide');
                                         });
                                     });
