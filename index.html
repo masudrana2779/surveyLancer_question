@@ -659,7 +659,7 @@
                                 <div class="question-click-shield" tabindex="-1"
                                      style="height: 201px; width: 840px; display: block;"></div>
                                 <div class="question-row clearfix overlay" tabindex="-1">
-                                    <div data-question-type="multiple_choice_vertical_two_col"
+                                    <div id="matrixItemSelect" data-question-type="multiple_choice_vertical_two_col"
                                          data-rq-question-type="multiple_choice_vertical_two_col"
                                          class="question-container">
                                         <div id="4question-field-1046553673" data-qnumber="4" data-qdispnumber="4"
@@ -1145,13 +1145,13 @@
 
                                     <script>
                                         $(document).ready(function () {
-                                            $("#4question-field-1046553673 input[type=checkbox]").on("click", function () {
-                                                $("#4Should_Be_Same_ID").removeClass('hide');
+                                            $("#matrixItemSelect input[type=radio]").on("click", function () {
+                                                $("#matrixItemSelectOk").removeClass('hide');
                                             });
                                         });
                                     </script>
 
-                                    <button id="4Should_Be_Same_ID"
+                                    <button id="matrixItemSelectOk"
                                             class="new-button ok-button user-generated notranslate hide" type="submit">
                                         OK
                                     </button>
