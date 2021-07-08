@@ -1482,14 +1482,26 @@
                                             </fieldset>
                                         </div>
                                     </div>
-                                    <button id="617913915vy-ok"
+
+                                    <script>
+                                        $(document).ready(function () {
+                                            $(".recordBtn .btn").on("click", function () {
+                                                $("#recordBtn_ok").removeClass('hide');
+                                            });
+                                        });
+                                    </script>
+                                    <button id="recordBtn_ok"
                                             class="new-button ok-button user-generated notranslate hide" type="submit">
                                         OK
                                     </button>
                                 </div>
 
+                            </div>
 
-                                <input hidden="" type="text" name="count" value="8">
+
+
+
+                            <input hidden="" type="text" name="count" value="8">
 
                                 <div class="question-click-shield" tabindex="-1"
                                      style="height: 201px; width: 840px; display: block;"></div>
