@@ -1530,85 +1530,11 @@
                                                                 </div>
                                                             </div>
                                                             <div id="countdown">
-                                                                <!--                                                                <div id="countdown-number"></div>-->
-                                                                <div class="countdown-number"
-                                                                     id="countdown-number"></div>
+                                                                <div id="countdown-number"></div>
                                                                 <svg>
                                                                     <circle r="18" cx="20" cy="20"></circle>
                                                                 </svg>
                                                             </div>
-
-
-                                                            <!--<script>
-                                                                function timeCountDownFlashImg() {
-                                                                    var val = document.querySelector(".countdown-number");
-                                                                    let i = 10;
-                                                                    var cancel = setInterval(() => {
-                                                                        if (i <= 1) {
-                                                                            clearInterval(cancel);
-                                                                            $('#countdown').html('');
-                                                                        }
-                                                                        val.innerHTML = `0${&#45;&#45;i}`;
-                                                                    }, 1000);
-                                                                }
-
-                                                                $(window).on('scroll', function () {
-                                                                    if (!$('#flashImgWrap').hasClass("overlay")) {
-                                                                        timeCountDownFlashImg();
-                                                                    }
-                                                                });
-
-                                                            </script>-->
-
-
-                                                             <script>
-                                                                 $(document).ready(function () {
-                                                                     $(window).on('scroll', function () {
-                                                                         var lll = $('#flashImgWrap').hasClass("overlay");
-
-                                                                         var dddd = $('#countdown-number').text();
-                                                                         console.log(dddd, 222222)
-                                                                         console.log(lll, 1111);
-                                                                         if (!$('#flashImgWrap').hasClass("overlay")) {
-
-
-
-
-
-                                                                             $('#countdown').html(`<div id="countdown-number"></div>
-                                                                 <svg>
-                                                                     <circle r="18" cx="20" cy="20"></circle>
-                                                                 </svg>`);
-                                                                             $('#countdown').show();
-                                                                             $('#countdown-number').show();
-                                                                             var countdownNumberEl = document.getElementById('countdown-number');
-                                                                             var countdown = 10;
-
-                                                                             countdownNumberEl.textContent = countdown;
-
-                                                                             setInterval(function () {
-                                                                                 countdown = --countdown <= 0 ? 10 : countdown;
-
-                                                                                 countdownNumberEl.textContent = countdown;
-                                                                             }, 1000);
-
-
-                                                                         } else {
-                                                                             // if (dddd === 0) {
-
-
-
-
-                                                                             $('#countdown').hide('');
-                                                                             $('#countdown').html('');
-                                                                             $('#countdown-number').html('0');
-
-                                                                         }
-                                                                         // }
-                                                                     });
-                                                                 });
-
-                                                             </script>
                                                         </div>
                                                     </div>
                                                 </div>
